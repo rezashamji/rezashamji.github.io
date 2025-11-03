@@ -48,7 +48,20 @@ I’m especially interested in **algorithmic memory** and **higher-order inducti
 ## Technical Skills
 **Python** (PyTorch; HF Transformers / Tokenizers; TorchVision), **Distributed** (DDP / FSDP / DTensor), **Slurm / NCCL**, **WebDataset**, **Pandas / Numpy**, **W&B**, **YAML**;  
 **C++**, **Java**, **OCaml**; **Docker / Conda**; **SQL**  
-**Hardware:** multi-node **H100 / A100** (e.g., 4 × 4 GPUs, FSDP)
+**Hardware:** multi-node **H100 / A100** (e.g., 4×4 GPUs, FSDP)
+
+---
+
+## Selected Projects
+
+### ChainEnv RL Benchmarks (JAX)
+
+A compact sandbox to probe **exploration under sparse rewards** in a tunable 1-D chain (pure, vectorized JAX; laptop-friendly). Compares **PPO**, **PQN**, **DDPG**, **SAC** with **deterministic eval vs exploratory training**.
+**Repo:** [github.com/rezashamji/jax-chainenv-benchmarks](https://github.com/rezashamji/jax-chainenv-benchmarks)
+
+* **Why:** Cleanly separate **exploration** from **optimization** and contrast **on-policy** vs **off-policy** credit flow and sample efficiency.
+* **What I built:** A switchable-difficulty chain env + minimal faithful learners that produce **return-vs-steps** curves.
+* **Key takeaways:** As difficulty rises, learning is **exploration-limited** (not optimizer-limited). **Q(λ)** in PQN speeds **credit after success** (not discovery). **SAC/PQN** excel when discovery is easy; harder settings need **discrete critics** or **intrinsic bonuses/parallelism** to learn reliably.
 
 ---
 
