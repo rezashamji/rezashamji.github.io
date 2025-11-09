@@ -87,7 +87,7 @@ English (native) · Mandarin (fluent)
 - Email:  rezashamji@gmail.com  
 - LinkedIn:  [LinkedIn Profile](https://www.linkedin.com/in/rezashamji/)  
 - GitHub:  [GitHub Profile](https://github.com/rezashamji)
-- [📄 Download CV (PDF)](/Reza_Shamji_CV.pdf){:target="_blank"}
+- CV: [Download CV (PDF)](/Reza_Shamji_CV.pdf)
 <small>
 Preprint policy: the multimodal VLM submission is under double-blind review; title and link are intentionally omitted. Manuscript available upon request; code examples available.
 </small>
