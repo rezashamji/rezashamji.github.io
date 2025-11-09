@@ -88,6 +88,7 @@ English (native) · Mandarin (fluent)
 - LinkedIn:  [LinkedIn Profile](https://www.linkedin.com/in/rezashamji/)  
 - GitHub:  [GitHub Profile](https://github.com/rezashamji)
 - CV: [Download CV (PDF)](/Reza_Shamji_CV.pdf)
+
 <small>
 Preprint policy: the multimodal VLM submission is under double-blind review; title and link are intentionally omitted. Manuscript available upon request; code examples available.
 </small>
