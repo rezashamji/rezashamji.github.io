@@ -25,7 +25,7 @@ I’m especially interested in **algorithmic memory** and **higher-order inducti
 
 ### Zitnik Lab — Research Associate  _(Sept 2025 – Present)_
 
-- Built a **hybrid **keyword + embedding datastore (SQLite FTS5 + FAISS)** with CLI + agent API, letting labs transform their **own data (text/JSON) into searchable, agent-accessible knowledge bases** with Hugging Face sync and ToolUniverse integration.
+- Built a hybrid **keyword + embedding datastore (SQLite FTS5 + FAISS)** with CLI + agent API, letting labs transform their **own data (text/JSON) into searchable, agent-accessible knowledge bases** with Hugging Face sync and ToolUniverse integration.
 - Transformed **EU Health Portal** metadata into a weekly-refreshed index with topic / country / language filters and a link classifier for reproducible population-level studies.
 - Integrated **AlphaFold / UniProt** flows so agents can fetch predicted 3D structures (pLDDT, PDB/mmCIF) as part of their reasoning.
 - Connected HHS **MyHealthFinder** to structure demographic-specific preventive-care recommendations (age / sex / pregnancy).
