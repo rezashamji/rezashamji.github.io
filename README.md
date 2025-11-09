@@ -1,4 +1,5 @@
 # Reza Shamji
+
 Research Associate @ Zitnik Lab (Harvard Medical School)
 
 I work on **foundational sequence & multimodal architectures beyond dense self-attention**, aiming for **reasoning, long memory, and stability**.  
@@ -8,47 +9,40 @@ I’m especially interested in **algorithmic memory** and **higher-order inducti
 
 ## Preprints & Manuscripts
 
-- **[Democratizing AI Scientists using ToolUniverse](https://arxiv.org/abs/2509.23426)** · *arXiv (2025)*  
-  **Zitnik Lab — Harvard Medical School**  
-  Co-author. Open ecosystem enabling agent access to **600 + scientific tools** ([aiscientist.tools](https://aiscientist.tools)); highlighted in  
-  **[Nature (“How AI Agents Will Change Research”)](https://www.nature.com/articles/d41586-025-03246-7)**,  
-  **[Science (“The silicon cell AI cell models could transform biomedicine — if they work as promised”)](https://www.science.org/content/article/can-ai-capture-mind-boggling-complexity-human-cell)**,  
-  and **[Decoding Bio’s BioByte (“ToolUniverse Democratizes AI Scientists”)](https://decodingbio.substack.com/p/biobyte-134-tooluniverse-democratizes)**.  
+- **[Democratizing AI Scientists using ToolUniverse](https://arxiv.org/abs/2509.23426)** · *arXiv 2025*  
+  Zitnik Lab — Harvard Medical School · Co-author. Open ecosystem enabling agent access to **600+ scientific tools** ([aiscientist.tools](https://aiscientist.tools)).  
+  Highlighted in [Nature](https://www.nature.com/articles/d41586-025-03246-7), [Science](https://www.science.org/content/article/can-ai-capture-mind-boggling-complexity-human-cell), and [Decoding Bio / BioByte](https://decodingbio.substack.com/p/biobyte-134-tooluniverse-democratizes).  
   *(Nature Biotechnology submission under review.)*
 
-- **Multimodal VLM architectures study** *(ICLR 2026 submission under review; anonymous)*  
-  **Kempner Institute (Harvard – MIT) · Advised by Yilun Du & Sham Kakade**  
-  Co-author. Conducted during a Kempner Institute internship on **vision-language model design choices** and **cross-modality transfer**.  
-  *Title / link omitted for anonymity · manuscript available upon request · code examples available.*
+- **Multimodal VLM architectures study** · *ICLR 2026 submission under review (anonymous)*  
+  Kempner Institute (Harvard–MIT) · Co-author, advised by Yilun Du & Sham Kakade.  
+  Empirical study of **vision–language model design choices** and **cross-modality transfer**.  
+  *Title/link omitted for anonymity; manuscript available on request.*
 
 ---
 
 ## Research & Engineering
 
 ### Zitnik Lab — Research Associate  _(Sept 2025 – Present)_
-- **Hybrid keyword + embedding datastore (SQLite FTS5 + FAISS):** ingest → deduplicate → embed → index pipeline with CLI + agent API; Hugging Face sync + local caching → labs and agents can instantly build **searchable knowledge bases**.  
-- **EUHealth datasets:** transformed EU Health Portal metadata into a **weekly-refreshed index** with topic / country / language filters + a link classifier to flag downloadable datasets for reproducible population-level research.  
-- **AlphaFold integration:** UniProt-driven flow for agents to fetch **predicted 3D structures**, **pLDDT**, and **PDB/mmCIF** files—adding structural biology evidence into agentic reasoning.  
-- **ODPHP (preventive care):** integrated HHS **MyHealthFinder** to structure demographic-specific recommendations (age / sex / pregnancy), enabling **policy-grounded preventive-care guidance**.
 
-*These engineering contributions underpin the ToolUniverse preprint above (arXiv 2025).*
+- Hybrid **keyword + embedding datastore** (SQLite FTS5 + FAISS) with CLI + agent API and Hugging Face sync, so labs can quickly build searchable knowledge bases.
+- Transformed EU Health Portal metadata into a **weekly-refreshed index** with topic / country / language filters and a link classifier for reproducible population-level studies.
+- Integrated **AlphaFold / UniProt** flows so agents can fetch predicted 3D structures (pLDDT, PDB/mmCIF) as part of their reasoning.
+- Connected HHS **MyHealthFinder** to structure demographic-specific preventive-care recommendations (age / sex / pregnancy).
+
+<small>These contributions underpin the ToolUniverse preprint above.</small>
 
 ---
 
 ### Kempner Institute — ML Research Engineer Intern (Multimodal AI)  _(Jun – Sept 2025)_
-**Advised by Yilun Du & Sham Kakade**
-- **End-to-end VQA benchmarking:** ChartQA, RealWorldQA, MMT-Bench, MathVista, DocVQA, TextVQA—dataset factories, OCR / table serialization, collate functions, and custom scorers (numeric relative error, **ANLS**, MCQ).  
-- **Transformer / VLM infrastructure:** configurable **QK normalization** (LayerNorm, RMSNorm, custom) for robust OCR / vision token handling; integrated **Qwen3-8B** into cross-attention fusion with selective freezing; built a **YAML-driven LR-scheduler registry** (cosine warmup + custom).  
-- **Training at scale:** multi-node **FSDP/DDP** on **H100s** via Slurm with **Weights & Biases** monitoring.
 
-*This work forms the empirical and infrastructure core of the (anonymous) ICLR 2026 VLM submission above.*
+Advised by Yilun Du & Sham Kakade.
 
----
+- Built **end-to-end VQA benchmarking** for ChartQA, RealWorldQA, MMT-Bench, MathVista, DocVQA, TextVQA, including dataset factories, OCR/table serialization, collate functions, and custom scorers (numeric error, ANLS, MCQ).
+- Implemented configurable **QK normalization** (LayerNorm, RMSNorm, custom) and integrated **Qwen3-8B** into cross-attention fusion with selective freezing plus a YAML-driven LR scheduler registry.
+- Ran large-scale training with **FSDP/DDP on H100s** via Slurm, with Weights & Biases monitoring.
 
-## Technical Skills
-**Python** (PyTorch; HF Transformers / Tokenizers; TorchVision), **Distributed** (DDP / FSDP / DTensor), **Slurm / NCCL**, **WebDataset**, **Pandas / Numpy**, **W&B**, **YAML**;  
-**C++**, **Java**, **OCaml**; **Docker / Conda**; **SQL**  
-**Hardware:** multi-node **H100 / A100** (e.g., 4×4 GPUs, FSDP)
+<small>These contributions underpin the VLM preprint above.</small>
 
 ---
 
@@ -56,30 +50,44 @@ I’m especially interested in **algorithmic memory** and **higher-order inducti
 
 ### ChainEnv RL Benchmarks (JAX)
 
-A compact sandbox to probe **exploration under sparse rewards** in a tunable 1-D chain (pure, vectorized JAX; laptop-friendly). Compares **PPO**, **PQN**, **DDPG**, **SAC** with **deterministic eval vs exploratory training**.
+A compact sandbox to probe **exploration under sparse rewards** in a tunable 1-D chain (pure, vectorized JAX; laptop-friendly).  
 **Repo:** [github.com/rezashamji/jax-chainenv-benchmarks](https://github.com/rezashamji/jax-chainenv-benchmarks)
 
-* **Why:** Cleanly separate **exploration** from **optimization** and contrast **on-policy** vs **off-policy** credit flow and sample efficiency.
-* **What I built:** A switchable-difficulty chain env + minimal faithful learners that produce **return-vs-steps** curves.
-* **Key takeaways:** As difficulty rises, learning is **exploration-limited** (not optimizer-limited). **Q(λ)** in PQN speeds **credit after success** (not discovery). **SAC/PQN** excel when discovery is easy; harder settings need **discrete critics** or **intrinsic bonuses/parallelism** to learn reliably.
+- Compares **PPO, PQN, DDPG, SAC** with deterministic evaluation vs exploratory training.
+- Cleanly separates **exploration** from **optimization** and contrasts **on-policy** vs **off-policy** credit flow.
+- Shows that as difficulty rises, learning becomes **exploration-limited** (not optimizer-limited); SAC/PQN help when discovery is easy, harder settings need discrete critics or intrinsic bonuses/parallelism.
+
+---
+
+## Technical Skills
+
+- **Languages:** Python, C++, Java, OCaml, SQL  
+- **ML / DL:** PyTorch, HF Transformers & Tokenizers, TorchVision, WebDataset  
+- **Systems & Scaling:** DDP, FSDP, DTensor, Slurm, NCCL, Docker, Conda  
+- **Data / Tooling:** Pandas, NumPy, YAML, Weights & Biases  
+- **Hardware:** multi-node H100 / A100 (e.g., 4×4 GPUs with FSDP)
 
 ---
 
 ## Education
-**Harvard University** — A.B. in Computer Science (Secondary in Economics) · _Expected May 2025_
+
+**Harvard University** — A.B. in Computer Science (Secondary in Economics)  
+Expected May 2025
 
 ---
 
 ## Languages
-**English** (native)  ·  **Mandarin** (fluent)
+
+English (native) · Mandarin (fluent)
 
 ---
 
 ## Contact & Links
-- Email:  rezamshamji@gmail.com  
+
+- Email:  rezashamji@gmail.com  
 - LinkedIn:  [LinkedIn Profile](https://www.linkedin.com/in/rezashamji/)  
-- Github:  [GitHub Profile](https://github.com/rezashamji)
+- GitHub:  [GitHub Profile](https://github.com/rezashamji)
 
----
-
-*Preprint policy:* The multimodal VLM submission is under double-blind review; **title and link intentionally omitted**. *Manuscript available upon request; code examples available.*
+<small>
+Preprint policy: the multimodal VLM submission is under double-blind review; title and link are intentionally omitted. Manuscript available upon request; code examples available.
+</small>
