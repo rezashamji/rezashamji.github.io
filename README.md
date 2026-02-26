@@ -5,7 +5,7 @@
 
 ---
 
-## 🔍 Looking for Collaborations
+## ◆ <span style="color: #0F79D0;">Looking for Collaborations</span>
 
 I'm actively seeking **exposure to theoretical deep learning research** before submitting PhD applications this fall. If you work on alternatives to gradient descent, transformer architecture theory, model implicit bias, and/or transfomer/SSM/alternative to transformer training dynamics—**I'd love to connect**. Early feedback and collaborative projects would help ground my research direction.
 
