@@ -47,17 +47,17 @@ My longer-term vision is to rethink artificial intelligence from first principle
 **Foundational LLM Health Reasoning & Knowledge Integration**
 - Studying **inductive biases in retrieval-augmented clinical decision making** — developing model-agnostic predictors for when external knowledge (e.g., knowledge graphs) improves vs. degrades LLM performance
 - Implemented and evaluated **GRPO** to study post-training reasoning methods for health reasoning tasks
+**External Stakeholder Collaboration**
+- Coordinating deliverables with **Gates Foundation** to translate research findings into deployable AI products
 
 **Infrastructure & ToolUniverse Integration**
 - Architected a hybrid **semantic-keyword datastore (SQLite FTS5 + FAISS)** with CLI + agent APIs, enabling researchers to convert lab-specific documents into AI-searchable collections for private or public use
 - Transformed **FAIR DCAT-AP metadata** into a weekly-refreshed database of ~300 EU public-health datasets (21 tools; disease surveillance, cancer registries, mortality) with structured filtering and automated link extraction
 - Integrated **AlphaFold (UniProt)** and **HHS MyHealthFinder** APIs to ground agent reasoning in structural biology and clinical guidance
 - Driving **CZI Biohub partnership** to integrate foundation models into ToolUniverse for molecular/protein discovery
+<small>Core infrastructure and findings underpin the [ToolUniverse preprint](https://arxiv.org/abs/2509.23426) ("Democratizing AI Scientists using ToolUniverse").</small>
 
-**External Stakeholder Collaboration**
-- Coordinating deliverables with **Gates Foundation** to translate research findings into deployable AI products
 
-<small>Core infrastructure and findings underpin the [ToolUniverse preprint](https://arxiv.org/abs/2509.23426) (Nature, Science, BioByte).</small>
 
 ---
 
@@ -124,7 +124,3 @@ English (native) · Mandarin (fluent)
 - LinkedIn:  [LinkedIn Profile](https://www.linkedin.com/in/rezashamji/)  
 - GitHub:  [GitHub Profile](https://github.com/rezashamji)
 - CV: [Download CV (PDF)](/Reza_Shamji_CV.pdf)
-
-<small>
-Preprint policy: the multimodal VLM submission is under double-blind review; link is intentionally omitted. Manuscript available upon request; code examples available.
-</small>
