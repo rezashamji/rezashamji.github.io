@@ -1,29 +1,31 @@
 # Reza Shamji
 
 **Research Associate** @ Zitnik Lab (Harvard Medical School)
-*PhD applications due Fall 2026 (hopeful entry Fall 2027) — theoretical deep learning & alternatives to neural networks*
-
----
-
-## ◆ <span style="color: #0F79D0;">Looking for Collaborations</span>
-
-I'm actively seeking **exposure to theoretical deep learning research** before submitting PhD applications this fall. If you work on alternatives to gradient descent, transformer architecture theory, model implicit bias, and/or transfomer/SSM/alternative to transformer training dynamics—**I'd love to connect**. Early feedback and collaborative projects would help ground my research direction.
+*Applying to **PhDs in mathematics**, Fall 2026 — chasing whether free will and consciousness can be mathematically modeled.*
 
 ---
 
 ## Research Vision
 
-I’m driven by a fundamental question: **Is gradient descent on deep neural networks the right path toward artificial intelligence?**
+**The question I want to spend my life on:** can free will and consciousness be **mathematically modeled** — or are humans, in some formal sense, *beyond* mathematics? That is the single thing I want to know before I die, and the reason I am applying to **PhDs in mathematics** this fall.
 
-My research interests span two interconnected directions:
+**Why I'm starting in AI:** because it is the closest thing to **mathematically-defined human reasoning** I have seen in my lifetime, which makes it the right place to begin — even though it isn't the destination. Even "superintelligence," as it's usually defined, lives in the language of productivity and economic value, not the language of agency, free will, or consciousness. AI gets me near the math. The math is what I will need to take the bigger question further.
 
-**1. LLM Reasoning & Knowledge Integration**
-Currently, I study how large language models leverage external knowledge—particularly when knowledge *helps* vs. *harms* performance. I’m developing **model-agnostic predictors** to determine when retrieval-augmented systems should be deployed, understanding the inductive biases that govern when agent decision-making improves under external constraints.
+**Within AI, the bet I'm making:** backpropagation — the chain rule we use to update every weight in a network — *does not look like how brains actually learn*. Real neurons appear to update **locally**: each connection adjusts based on the activity of the two cells it sits between, sometimes gated by a chemical signal like dopamine. Backprop, by contrast, needs a global error signal that travels backwards across the entire network through carefully matched weights — something brains do not appear to implement. Whether the brain nonetheless *approximates* something gradient-like through some other mechanism is genuinely open. And backprop has its own problems even in silico — vanishing gradients, credit assignment, an implicit-bias story still unsettled. The honest position is that **the function-update rule is the open frontier**; if we want intelligences different from the ones gradient descent produces, that is where I want to look first.
 
-**2. Theoretical Deep Learning & Architecture Alternatives**
-My longer-term vision is to rethink artificial intelligence from first principles. I believe understanding the mathematics of transformers—attention mechanisms, QKV matrices, MLP/hidden state dynamics—is essential groundwork. But I’m skeptical that gradient descent is the most computationally representative path to general intelligence. During my PhD, I plan to:
-- **Explore alternative learning paradigms** beyond gradient descent, potentially informed by (but not limited to) neuroscience
-- **Question core assumptions** about what makes a system "intelligent," building toward methods that may fundamentally differ from current neural network approaches
+**And this is where the small question meets the large one.** The bet on alternatives to backprop holds in both directions AI could be heading. *If* the goal is to reach the human brain — the highest intelligence we have evidence of — backprop is the wrong tool, for the reasons above. *If* the goal is to surpass it (which I find more honest — humans have always placed ourselves at the center of the world, and assuming the brain is the ceiling of possible intelligence is the same instinct), backprop has scaled impressively and may keep doing so, but empirically, scaled backprop today has not even reached human-level intelligence. In either case, I think an alternative function-update rule is required — to close that gap, and to push past it.
+
+That is what connects this work to the bigger question. I'm not claiming the math of free will and consciousness lives literally inside an alternative to backprop — that would be a leap. What I am claiming is that chasing such an alternative is the closest *grounded* AI problem to the question I actually care about: close enough to give me a real taste of the mathematical foundations, and concrete enough that I can do real work on it now — instead of waving hands about consciousness from the outside.
+
+Before my PhD, I want to work on:
+- **Alternatives to gradient descent** as the substrate of learning — local update rules, energy-based methods, biologically-plausible updates, anything that lets a function improve itself without backprop's global signal
+- **The mathematics of why current architectures work at all** — attention, implicit bias, training dynamics — as the groundwork for proposing what comes after
+
+---
+
+## ◆ <span style="color: #0F79D0;">Looking for Collaborations</span>
+
+I'm looking for collaborators before I submit math PhD applications this fall. If you work on **alternatives to backpropagation**, the **mathematics of why current architectures work**, or formal approaches to **consciousness, agency, or free will** (however speculative) — **I'd love to connect**. Early feedback and shared projects would help me ground my direction before applications.
 
 ---
 
@@ -44,9 +46,11 @@ My longer-term vision is to rethink artificial intelligence from first principle
 
 ### [Zitnik Lab](https://zitniklab.hms.harvard.edu/) — Research Associate  _(Sept 2025 – Present)_
 
-**Foundational LLM Health Reasoning & Knowledge Integration**
-- Studying **inductive biases in retrieval-augmented clinical decision making** — developing model-agnostic predictors for when external knowledge (e.g., knowledge graphs) improves vs. degrades LLM performance
-- Implemented and evaluated **GRPO** to study post-training reasoning methods for health reasoning tasks
+**KG-Router — Knowledge-Graph–Grounded Routing for High-Stakes QA**
+- Building **KG-Router**: training an LLM agent to *route over typed tools* in a curated knowledge graph rather than free-generating answers. The goal is **reliable, auditable retrieval** in domains where hallucination has real consequences — medicine, law, science.
+- The shift in framing: stop asking *"what does the model say?"* and start asking *"which slice of grounded knowledge does it consult, and in what order?"* The routing policy is trained via **SFT followed by RL** on (query → tool sequence → grounded answer) traces, evaluated against ungrounded-LLM and naïve-RAG baselines.
+- Validating in medical QA first (HealthBench, AfriMedQA), with early results showing meaningful gains over both ungrounded and naïve-RAG baselines. The contribution I'm targeting, though, is the **methodology** — converting any heterogeneous knowledge graph into a typed tool surface an LLM can route over reliably — not the medical numbers themselves.
+
 **External Stakeholder Collaboration**
 - Coordinating deliverables with **Gates Foundation** to translate research findings into deployable AI products
 
