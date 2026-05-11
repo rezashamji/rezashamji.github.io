@@ -3,6 +3,8 @@
 **Research Associate** @ Zitnik Lab (Harvard Medical School)
 *Applying to **PhDs in mathematics**, Fall 2026 — chasing whether free will and consciousness can be mathematically modeled.*
 
+> **New essay → [How AI Actually Works](https://rezashamji.substack.com/p/how-ai-actually-works)** — AI from the ground up through the math, no buzzwords. Walks Vision Transformers from pixels → attention → vision-language models, and ends on the bigger question I'm chasing.
+
 ---
 
 ## Research Vision
@@ -13,7 +15,7 @@
 
 **Within AI, the bet I'm making:** backpropagation — the chain rule we use to update every weight in a network — *does not look like how brains actually learn*. Real neurons appear to update **locally**: each connection adjusts based on the activity of the two cells it sits between, sometimes gated by a chemical signal like dopamine. Backprop, by contrast, needs a global error signal that travels backwards across the entire network through carefully matched weights — something brains do not appear to implement. Whether the brain nonetheless *approximates* something gradient-like through some other mechanism is genuinely open. And backprop has its own problems even in silico — vanishing gradients, credit assignment, an implicit-bias story still unsettled. The honest position is that **the function-update rule is the open frontier**; if we want intelligences different from the ones gradient descent produces, that is where I want to look first.
 
-**And this is where the small question meets the large one.** The bet on alternatives to backprop holds in both directions AI could be heading. *If* the goal is to reach the human brain — the highest intelligence we have evidence of — backprop is the wrong tool, for the reasons above. *If* the goal is to surpass it (which I find more honest — humans have always placed ourselves at the center of the world, and assuming the brain is the ceiling of possible intelligence is the same instinct), backprop has scaled impressively and may keep doing so, but empirically, scaled backprop today has not even reached human-level intelligence. In either case, I think an alternative function-update rule is required — to close that gap, and to push past it.
+**And this is where the small question meets the large one.** The bet on alternatives to backprop holds in both directions AI could be heading. *If* the goal is to reach the human brain — the highest intelligence we have evidence of — backprop is the wrong tool, for the reasons above. *If* the goal is to surpass it (which I find more honest — humans have     placed ourselves at the center of the world, and assuming the brain is the ceiling of possible intelligence is the same instinct), backprop has scaled impressively and may keep doing so, but empirically, scaled backprop today has not even reached human-level intelligence. In either case, I think an alternative function-update rule is required — to close that gap, and to push past it.
 
 That is what connects this work to the bigger question. I'm not claiming the math of free will and consciousness lives literally inside an alternative to backprop — that would be a leap. What I am claiming is that chasing such an alternative is the closest *grounded* AI problem to the question I actually care about: close enough to give me a real taste of the mathematical foundations, and concrete enough that I can do real work on it now — instead of waving hands about consciousness from the outside.
 
@@ -26,6 +28,14 @@ Before my PhD, I want to work on:
 ## ◆ <span style="color: #0F79D0;">Looking for Collaborations</span>
 
 I'm looking for collaborators before I submit math PhD applications this fall. If you work on **alternatives to backpropagation**, the **mathematics of why current architectures work**, or formal approaches to **consciousness, agency, or free will** (however speculative) — **I'd love to connect**. Early feedback and shared projects would help me ground my direction before applications.
+
+---
+
+## Writing
+
+- **[How AI Actually Works](https://rezashamji.substack.com/p/how-ai-actually-works)** · *Substack, May 2026*
+  An explanation of AI from the ground up — through the math, with no prerequisites and no buzzwords. Walks Vision Transformers from pixels → patch embeddings → Q/K/V attention → vision-language models, and connects to the question I'm actually chasing: whether consciousness and free will can be mathematically modeled.
+- More writing at [rezashamji.substack.com](https://rezashamji.substack.com).
 
 ---
 
