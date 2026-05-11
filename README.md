@@ -3,6 +3,8 @@
 **Research Associate** @ Zitnik Lab (Harvard Medical School)
 *Applying to **PhDs in mathematics**, Fall 2026 — chasing whether free will and consciousness can be mathematically modeled.*
 
+> **New essay → [How AI Actually Works](https://rezashamji.substack.com/p/how-ai-actually-works)** — AI from the ground up through the math, no buzzwords. Walks Vision Transformers from pixels → attention → vision-language models, and ends on the bigger question I'm chasing.
+
 ---
 
 ## Research Vision
